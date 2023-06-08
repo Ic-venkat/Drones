@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drone Predictor</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    {% include 'nav.html' %}
+    
+    <div class="container">
+        <h1 class="mt-5">Based on your recommendations, these could be the best drones</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="static\images\drone1.jpg" class="card-img-top" alt="Drone Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Random Forest Model</h5>
+                        <p class="card-text"><strong>Drone Name:</strong> {{ rf_drone_name }}</p>
+                        <p class="card-text"><strong>Flight Radius:</strong> {{ rf_flight_radius }}</p>
+                        <p class="card-text"><strong>Flight Height:</strong> {{ rf_flight_height }}</p>
+                        <p class="card-text"><strong>Operations per Day:</strong> {{ rf_operations_per_day }}</p>
+                        <p class="card-text"><strong>Wind Speed:</strong> {{ rf_wind_speed }}</p>
+                        <p class="card-text"><strong>Budget:</strong> {{ rf_budget }}</p>
+                        <p class="card-text"><strong>Payload Capacity:</strong> {{ rf_payload_capacity }}</p>
+                        <p class="card-text"><strong>Camera Quality:</strong> {{ rf_camera_quality }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="static\images\images.jpg" class="card-img-top" alt="Drone Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Logistic Regression Model</h5>
+                        <p class="card-text"><strong>Drone Name:</strong> {{ lr_drone_name }}</p>
+                        <p class="card-text"><strong>Flight Radius:</strong> {{ lr_flight_radius }}</p>
+                        <p class="card-text"><strong>Flight Height:</strong> {{ lr_flight_height }}</p>
+                        <p class="card-text"><strong>Operations per Day:</strong> {{ lr_operations_per_day }}</p>
+                        <p class="card-text"><strong>Wind Speed:</strong> {{ lr_wind_speed }}</p>
+                        <p class="card-text"><strong>Budget:</strong> {{ lr_budget }}</p>
+                        <p class="card-text"><strong>Payload Capacity:</strong> {{ lr_payload_capacity }}</p>
+                        <p class="card-text"><strong>Camera Quality:</strong> {{ lr_camera_quality }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="static\images\images (6).jpg" class="card-img-top" alt="Drone Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Support Vector Model</h5>
+                        <p class="card-text"><strong>Drone Name:</strong> {{ svm_drone_name }}</p>
+                        <p class="card-text"><strong>Flight Radius:</strong> {{ svm_flight_radius }}</p>
+                        <p class="card-text"><strong>Flight Height:</strong> {{ svm_flight_height }}</p>
+                        <p class="card-text"><strong>Operations per Day:</strong> {{ svm_operations_per_day }}</p>
+                        <p class="card-text"><strong>Wind Speed:</strong> {{ svm_wind_speed }}</p>
+                        <p class="card-text"><strong>Budget:</strong> {{ svm_budget }}</p>
+                        <p class="card-text"><strong>Payload Capacity:</strong> {{ svm_payload_capacity }}</p>
+                        <p class="card-text"><strong>Camera Quality:</strong> {{ svm_camera_quality }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

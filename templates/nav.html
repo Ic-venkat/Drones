@@ -1,0 +1,15 @@
+<nav class="py-2 bg-light border-bottom">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="{{ url_for('drone_home') }}" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="{{ url_for('drone_database') }}" class="nav-link link-dark px-2">Drone Database</a></li>
+        <li class="nav-item"><a href="{{ url_for('drone_prediction') }}" class="nav-link link-dark px-2">Drone Recommendations</a></li>
+        <li class="nav-item"><a href="{{ url_for('drone_about') }}" class="nav-link link-dark px-2">About</a></li>
+        <li class="nav-item"><a href="{{ url_for('drone_contact') }}" class="nav-link link-dark px-2">Contact Us</a></li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="{{ url_for('drone_login') }}" class="nav-link link-dark px-2">Login</a></li>
+        <li class="nav-item"><a href="{{ url_for('drone_signup') }}" class="nav-link link-dark px-2">Sign up</a></li>
+      </ul>
+    </div>
+  </nav>

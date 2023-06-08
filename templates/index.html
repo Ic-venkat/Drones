@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Drone Database</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <style>
+        .banner {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner-container {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    {% include 'nav.html'%}
+
+
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to our Drone Selection Website!</h1>
+            <p class="lead">We're thrilled to have you here, embarking on an exciting journey into the world of drones.
+                Whether you're a seasoned enthusiast or a curious beginner, our website is designed to be your ultimate
+                resource for drone selection and recommendations.</p>
+            <p class="lead">At our core, we are passionate about helping you find the perfect drone that meets your
+                unique needs and preferences. Our comprehensive drone database is meticulously curated, offering a
+                diverse range of models from renowned manufacturers. With detailed descriptions, specifications, and
+                user reviews, you'll have all the information at your fingertips to make an informed decision.</p>
+            <p class="lead">Looking for personalized recommendations? Our innovative drone selector quiz will guide you
+                through a tailored experience, taking into account your budget, skill level, and desired features. We
+                understand that each individual has different requirements, and we're here to match you with the drone
+                that suits you best.</p>
+            <p class="lead">Our commitment to excellence extends beyond just recommendations. We strive to provide you
+                with a seamless browsing experience, offering intuitive navigation, powerful search functionality, and
+                an engaging interface. Whether you're exploring our drone database, comparing models, or reading
+                informative buying guides, we're here to ensure your experience is enjoyable and informative.</p>
+            <p class="lead">We also value your feedback and encourage you to share your thoughts and experiences. Your
+                insights help us continuously improve and enhance our services, ensuring that we remain a trusted
+                destination for all things drones.</p>
+            <hr class="my-4">
+            <p class="lead">Thank you for joining us on this adventure. Let's take flight together and discover the
+                thrilling world of drones!</p>
+            <p class="lead">Sincerely,<br>The Drone Selection Website Team</p>
+        </div>
+    </div>
+
+
+
+    <main>
+
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">These are some popular recommendations of drones. You can try personalized
+                        recommendations based on your requirements using AI.</h1>
+                    <p class="lead text-muted">Good drones can generate greater insights in field.</p>
+                    <p>
+                        <a href="{{ url_for('drone_database') }}" class="btn btn-primary my-2">Click here for all the
+                            drones information</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="static\images\drone2.webp" class="card-img-top" alt="Drone Image">
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to
+                                            page</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="static\images\images (6).jpg" class="card-img-top" alt="Drone Image">
+
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to
+                                            page</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="static\images\images.jpg" class="card-img-top" alt="Drone Image">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to
+                                            page</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="static\images\download (1).jpg" class="card-img-top" alt="Drone Image">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to
+                                            page</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="static\images\images (1).jpg" class="card-img-top" alt="Drone Image">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to
+                                            page</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="static\images\images (2).jpg" class="card-img-top" alt="Drone Image">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to
+                                            page</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+
+                            <img src="static\images\images (3).jpg" class="card-img-top" alt="Drone Image">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to
+                                            page</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="static\images\images (4).jpg" class="card-img-top" alt="Drone Image">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Go to
+                                            page</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="static\images\images (5).jpg" class="card-img-top" alt="Drone Image">
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">You can try several other features of this page.</p>
+            <p class="mb-0"> Try signing up at the top .</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

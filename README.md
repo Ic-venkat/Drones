@@ -5,7 +5,9 @@ This is a ML project where I trained 2 ML models using Support Vector Machine an
 This is a very basic project. Don't Judge me for this as I am a student when I am doing this project thank You :)
 
 Run the model.py code first 
-```python
+```cmd
 # python model.py
 ```
-This will 
+This will train the models and save the Joblib files
+
+
